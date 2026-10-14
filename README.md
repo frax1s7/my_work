@@ -30,10 +30,10 @@ my-web-site/
 ```
 
 ## 🌐 GitHub Pages
-Сайт доступен по адресу: https://[your-username].github.io/my-web-site
+Сайт доступен по адресу: https://frax1s7.github.io/my_work/
 
 ## 👥 Разработчики
-[Твоё имя] — разработчик
+[Кирилл Насиковский] — разработчик
 
 ## 📄 Лицензия
 MIT
