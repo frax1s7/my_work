@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Главная — Гриф</title>
+    <meta
+      name="description"
+      content="Магазин электрогитар: подбор под жанр, настройка перед отправкой, советы в блоге."
+    />
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600&family=Unbounded:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Шапка сайта: логотип, меню, избранное и переключатель темы -->
+    <header class="site-header">
+      <a class="logo" href="index.html">
+        <img src="img/logo.svg" alt="" width="28" height="28" />
+        Гриф
+      </a>
+      <button class="burger" aria-label="Меню" aria-expanded="false">Меню</button>
+      <nav class="nav" id="nav">
+        <a href="index.html">Главная</a>
+        <a href="shop.html">Каталог</a>
+        <a href="about.html">О нас</a>
+        <a href="blog.html">Блог</a>
+        <a href="contact.html">Контакты</a>
+      </nav>
+      <div class="tools">
+        <span>
+          Избранное:
+          <b id="fav-count">0</b>
+        </span>
+        <button id="theme-toggle" aria-label="Сменить тему">Тема</button>
+      </div>
+    </header>
+    <!-- Основное содержимое страницы -->
+    <main>
+      <!-- Hero-секция -->
+      <section class="hero">
+        <div class="strings" aria-hidden="true">
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+        </div>
+        <div class="hero-text">
+          <h1>Электрогитары для тех, кто играет, а не просто смотрит</h1>
+          <p>
+            «Гриф» помогает выбрать инструмент под жанр и руки, настраивает его перед отправкой и
+            отвечает на вопросы после покупки.
+          </p>
+          <a class="btn" href="blog.html">Читать блог</a>
+        </div>
+      </section>
+      <!-- Новые поступления -->
+      <section>
+        <h2>Новое в магазине</h2>
+        <div class="grid">
+          <article class="card item">
+            <img
+              src="img/guitars/jem7v.jpg"
+              alt="Ibanez JEM7V"
+              width="400"
+              height="400"
+              loading="lazy"
+            />
+            <h3>Ibanez JEM7V</h3>
+            <p>
+              Сигнатурная модель Стива Вая: тремоло Edge, звукосниматели DiMarzio, ручка monkey
+              grip.
+            </p>
+            <button class="fav-btn" data-id="jem7v" aria-pressed="false">В избранное</button>
+          </article>
+          <article class="card item">
+            <img
+              src="img/guitars/strat.jpg"
+              alt="Fender Stratocaster"
+              width="400"
+              height="400"
+              loading="lazy"
+            />
+            <h3>Fender Stratocaster</h3>
+            <p>Классика для блюза, рока и фанка. Три сингла и яркий, звонкий тембр.</p>
+            <button class="fav-btn" data-id="strat" aria-pressed="false">В избранное</button>
+          </article>
+          <article class="card item">
+            <img
+              src="img/guitars/lp.jpg"
+              alt="Gibson Les Paul Standard"
+              width="400"
+              height="400"
+              loading="lazy"
+            />
+            <h3>Gibson Les Paul Standard</h3>
+            <p>Тяжёлый корпус и два хамбакера: плотный сустейн для рока и металла.</p>
+            <button class="fav-btn" data-id="lp" aria-pressed="false">В избранное</button>
+          </article>
+        </div>
+      </section>
+      <!-- Быстрые ссылки на разделы -->
+      <section>
+        <h2>Быстрые ссылки</h2>
+        <div class="grid">
+          <a class="card" href="shop.html">
+            <h3>Каталог</h3>
+            <p>Гитары, акустика, комбики и педали</p>
+          </a>
+          <a class="card" href="about.html">
+            <h3>О магазине</h3>
+            <p>Кто мы и как работаем</p>
+          </a>
+          <a class="card" href="blog.html">
+            <h3>Блог</h3>
+            <p>Обзоры, советы и новости</p>
+          </a>
+          <a class="card" href="contact.html">
+            <h3>Контакты</h3>
+            <p>Напишите нам, подберём гитару</p>
+          </a>
+        </div>
+      </section>
+      <!-- Статистика -->
+      <section>
+        <h2>Магазин в цифрах</h2>
+        <ul class="stats">
+          <li>
+            <b>120</b>
+            гитар в наличии
+          </li>
+          <li>
+            <b>8 лет</b>
+            на рынке
+          </li>
+          <li>
+            <b>1500</b>
+            гитаристов выбрали нас
+          </li>
+          <li>
+            <b>14 дней</b>
+            на возврат
+          </li>
+        </ul>
+      </section>
+    </main>
+    <!-- Подвал -->
+    <footer class="site-footer">
+      <p>
+        ©
+        <span id="year"></span>
+        Гриф, магазин электрогитар
+      </p>
+      <p>ул. Гитарная, 5. Ежедневно с 10:00 до 20:00</p>
+    </footer>
+    <!-- Скрипты -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

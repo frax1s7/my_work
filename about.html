@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>О нас — Гриф</title>
+    <meta name="description" content="Кто стоит за магазином Гриф, наши цели и история." />
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600&family=Unbounded:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Шапка сайта: логотип, меню, избранное и переключатель темы -->
+    <header class="site-header">
+      <a class="logo" href="index.html">
+        <img src="img/logo.svg" alt="" width="28" height="28" />
+        Гриф
+      </a>
+      <button class="burger" aria-label="Меню" aria-expanded="false">Меню</button>
+      <nav class="nav" id="nav">
+        <a href="index.html">Главная</a>
+        <a href="shop.html">Каталог</a>
+        <a href="about.html">О нас</a>
+        <a href="blog.html">Блог</a>
+        <a href="contact.html">Контакты</a>
+      </nav>
+      <div class="tools">
+        <span>
+          Избранное:
+          <b id="fav-count">0</b>
+        </span>
+        <button id="theme-toggle" aria-label="Сменить тему">Тема</button>
+      </div>
+    </header>
+    <!-- Основное содержимое страницы -->
+    <main>
+      <section>
+        <h1>О нас</h1>
+        <p>
+          «Гриф» — небольшой магазин электрогитар. Мы продаём инструменты, которые сами проверяем:
+          каждая гитара проходит настройку, проверку ладов и электроники.
+        </p>
+      </section>
+      <section>
+        <h2>Цели и задачи</h2>
+        <ul>
+          <li>Помочь новичку выбрать первую гитару без переплаты.</li>
+          <li>Честно рассказывать про плюсы и минусы моделей.</li>
+          <li>Отличать оригиналы от подделок и объяснять, как это делать.</li>
+          <li>Поддерживать покупателей после продажи.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Команда</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Алексей</h3>
+            <p>Основатель, подбор инструментов</p>
+          </div>
+          <div class="card">
+            <h3>Мария</h3>
+            <p>Мастер по настройке и ремонту</p>
+          </div>
+          <div class="card">
+            <h3>Дмитрий</h3>
+            <p>Консультант и автор блога</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>История</h2>
+        <ol class="timeline">
+          <li>
+            <b>2018.</b>
+            Открыли первую точку и продали первые 10 гитар.
+          </li>
+          <li>
+            <b>2021.</b>
+            Запустили мастерскую по настройке и ремонту.
+          </li>
+          <li>
+            <b>2023.</b>
+            Начали вести блог для гитаристов.
+          </li>
+          <li>
+            <b>2026.</b>
+            Запустили сайт магазина.
+          </li>
+        </ol>
+      </section>
+    </main>
+    <!-- Подвал -->
+    <footer class="site-footer">
+      <p>
+        ©
+        <span id="year"></span>
+        Гриф, магазин электрогитар
+      </p>
+      <p>ул. Гитарная, 5. Ежедневно с 10:00 до 20:00</p>
+    </footer>
+    <!-- Скрипты -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
